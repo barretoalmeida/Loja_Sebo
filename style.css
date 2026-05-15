@@ -3,4 +3,67 @@
     --beje: #ede9e7;
     --marrom: #b89276;
     --preto: #000000;
+    --branco: #ffffff;
+    --vermelho: #df0e0e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--beje);
+    color: var(--preto);
+    overflow: hidden;
+}
+
+
+/* Parte do inicio do site e o menu */
+.inicio {
+    width: 100%;
+    padding: 20px;
+}
+
+.inicio-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 12px 30px;
+    background: rgba(99, 22, 8, 0.747);
+    backdrop-filter: blur(8px);
+    border-radius: 40px;
+}
+
+.item-menu {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.item-menu:hover {
+    color: var(--vermelho);
 }
